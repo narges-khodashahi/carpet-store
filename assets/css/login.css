@@ -1,0 +1,87 @@
+.back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(46, 46, 46, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: var(--z-tooltip);
+    display: none;
+}
+
+.login-form{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    max-width: 65vw;
+    height: 50vh;
+    background-color: rgba(244, 244, 244, 0.90);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    animation: modalFadeIn var(--transition-normal);
+    z-index: var(--z-toast);
+}
+
+.form{
+    width: 400px;
+    margin: var(--spacing-md) auto;
+}
+form img{
+    width: 100px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    align-items: center;
+    width: 90%;
+    margin: var(--spacing-md) auto;
+}
+form p {
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    padding: var(--spacing-xs);
+    border-radius:var(--spacing-xs);
+    border: 1px solid var(--medium-gray);
+    box-shadow: var(--shadow-sm);
+}
+
+
+.modal-close{
+    position: absolute;
+    top: var(--spacing-xs);
+    right: var(--spacing-xs);
+    color: var(--primary);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-3xl);
+    margin: 8px 12px;
+    transition: var(--transition-normal);
+}
+
+.modal-close:hover{
+    box-shadow: var(--shadow-lg);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
