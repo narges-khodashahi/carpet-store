@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#efd3a7" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/img/logo/logo-circle.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/index.js"></script>
+    <title>نمونه سایت فرش</title>
+</head>
+<body class="visible">
+<!--loader-->
+<div id="loader">
+    <div class="dots-spinner">
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+        <div class="dot-spn"></div>
+    </div>
+</div>
+
+<!--Header-->
+<header class="header">
+    <nav class="navbar">
+            <div class="hamburger-btn" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">صفحه اصلی</a></li>
+                <li><a href="#category" class="nav-link" >دسته بندی ها</a></li>
+                <li><a href="#about" class="nav-link">درباره تاروپود</a></li>
+                <li><a href="#question" class="nav-link">سوالات متداول</a></li>
+                <li><a href="#decoration" class="nav-link">دکوراسیون مشتریان</a></li>
+                <li><a href="#comments" class="nav-link">نظرات</a></li>
+                <li><a href="#blog" class="nav-link"> مقالات</a></li>
+                <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="shopping-bag.html" class="nav-icon">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <button href="#" class="btn btn-secondary" onclick="openModal()">ثبت سفارش</button>
+            </div>
+        </nav>
+</header>
+
+<!-- Sidebar -->
+<div class="overlay" id="sidebarOverlay"></div>
+<nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <img src="assets/img/logo/logo.png">
+        <button class="close-btn" id="closeBtn" >×</button>
+    </div>
+
+    <div class="search-box">
+        <input type="search" placeholder="جستجو . . .">
+    </div>
+
+    <ul class="sidebar-menu">
+        <li class="sidebar-item"><a href="#home" class="sidebar-link">صفحه اصلی</a></li>
+        <li class="sidebar-item"><a href="#category" class="sidebar-link">دسته بندی</a></li>
+        <li class="sidebar-item"><a href="#about" class="sidebar-link">درباره ما</a></li>
+        <li class="sidebar-item"><a href="#question" class="sidebar-link">سوالات متداول</a></li>
+        <li class="sidebar-item"><a href="#comments" class="sidebar-link">نظرات شما</a></li>
+        <li class="sidebar-item"><a href="#blog" class="sidebar-link">اخبار و مقالات</a></li>
+        <li class="sidebar-item"><a href="#contact" class="sidebar-link">تماس با ما</a></li>
+    </ul>
+</nav>
+
+<!--login form-->
+<div class="back" id="Back"></div>
+<div class="login-form" id="loginModal">
+    <div class="form">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <form>
+            <img src="assets/img/logo/logo.png" alt="">
+            <p>لطفا نام و شماره همراه خود را وراد کنید.</p>
+            <input type="text" placeholder="لطفا نام خود را وارد نمایید.">
+            <input type="tel" placeholder="لطفا شماره همراه خود را وارد کنید.">
+            <button class="btn btn-accent">ورود</button>
+        </form>
+    </div>
+</div>
+
+<!--Main Content-->
+<main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title mb-3">تاروپودی از دل <span>اصالت</span> و <span>ظرافت</span> برای هر سلیقه ای</h1>
+                <p class="hero-description mb-5">
+                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است.
+                </p>
+                <div class="hero-buttons">
+                    <a href="store.html" class="btn btn-secondary">مشاهده محصولات</a>
+                    <a href="#" class="btn hero-btn-outline">ثبت سفارش</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fa fa-chevron-down"></i>
+            اسکرول کنید
+        </div>
+    </section>
+
+    <!--Category Section-->
+    <section class="category" id="category">
+        <div class="container">
+            <h2 class="section-title">دسته بندی فرش ها</h2>
+            <div class="content-category" style="position:relative;">
+                <div class="category-grid" id="categoryBox">
+                    <div class="category-item">
+                        <img src="assets/img/category/دستبافت-گونه.png" alt="">
+                        <span>فرش دستبافت</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/پتینه.png" alt="">
+                        <span>فرش پتینه</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/گبه-min.png" alt="">
+                        <span>فرش گبه</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/ترک-min.webp" alt="">
+                        <span>فرش ترک</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/مراکشی-min.webp" alt="">
+                        <span>فرش مراکشی</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/مربع-min.webp" alt="">
+                        <span>فرش مریع</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/وینتیج.webp" alt="">
+                        <span>فرش وینتیج</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/کهنه_نما-min.webp" alt="">
+                        <span>فرش کهنه نما</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/کودک-min.webp" alt="">
+                        <span>فرش کودک</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/دستبافت-گونه.png" alt="">
+                        <span>فرش دستبافت</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/پتینه.png" alt="">
+                        <span>فرش پتینه</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/گبه-min.png" alt="">
+                        <span>فرش گبه</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/ترک-min.webp" alt="">
+                        <span>فرش ترک</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/مراکشی-min.webp" alt="">
+                        <span>فرش مراکشی</span>
+                    </div>
+                    <div class="category-item">
+                        <img src="assets/img/category/مربع-min.webp" alt="">
+                        <span>فرش مریع</span>
+                    </div>
+                </div>
+                <button class="prev-slide" onclick="scrollCat('left')">&#10094</button>
+                <button class="next-slide" onclick="scrollCat('right')">&#10095</button>
+            </div>
+
+            <div class="type-cat-grid">
+                <div class="type-cat-item">
+                    <div class="type-cat-text">
+                        <span>بر اساس نوع</span>
+                    </div>
+                </div>
+                <div class="type-cat-item">
+                    <div class="type-cat-text">
+                        <span>بر اساس رنگ</span>
+                    </div>
+                </div>
+                <div class="type-cat-item">
+                    <div class="type-cat-text">
+                        <span>بر اساس اندازه</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--products-->
+    <section class="products">
+        <div class="container-pro container">
+            <h2 class="section-title">پرفروش ترین ها</h2>
+            <div class="product-grid" id="products">
+                <div class="product-item">
+                    <img src="assets/img/carpet/7b2c1bb4c64b2a2b7f974a01a1bc1347.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/4af47961783a15cd8353268b45d67ca3.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/5e5f5326d7377e722f4269006fa43765.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/407-110998-385x300-01.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/2b817637b4bf68d9b8442cdf962d06ca.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/97f03f617d57bd2d02afb593b7c8aa51.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/3666488f4e7814e0b6c8f90f9ada9f78.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/7b2c1bb4c64b2a2b7f974a01a1bc1347.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/4af47961783a15cd8353268b45d67ca3.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/5e5f5326d7377e722f4269006fa43765.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/407-110998-385x300-01.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/2b817637b4bf68d9b8442cdf962d06ca.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/97f03f617d57bd2d02afb593b7c8aa51.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet/3666488f4e7814e0b6c8f90f9ada9f78.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش دستبافت 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <div class="pro-price">
+                            <div class="off">
+                                <del class="price-off">15,280,000 </del>
+                                <span class="label-off">8%</span>
+                            </div>
+                            <span class="price-original">14,000,000 ت</span>
+                        </div>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="prev-pro" onclick="scrollProducts('left')">&#10094</button>
+            <button class="next-pro" onclick="scrollProducts('right')">&#10095</button>
+        </div>
+    </section>
+
+    <!--banner-->
+    <section class="banner">
+        <div class="container">
+            <div class="bnr-content">
+                <p>
+                    تخفیف باورنکردنی تاروپود!
+                </p>
+                <a href="store.html" class="btn btn-secondary">حالا خرید کنید!</a>
+                <img src="assets/img/carpet-bnr/IMG_20250925_172821_404.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">همه چیز درباره تاروپود</h2>
+                    <p class="about-text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز است و کاربرد های متنوع با هدف بهبود ابزار های کاربردی میباشد
+                    </p>
+                    <p class="about-text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است. . .
+                    </p>
+                    <a href="about-us.html" class="btn btn-secondary">بیشتر بخوانید.</a>
+                </div>
+                <div class="about-image"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="features-item">
+                    <div class="features-icon">
+                        <img src="assets/img/icon/original-products.svg" alt="">
+                    </div>
+                    <h3>کیفیت برتر</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است . . .</p>
+                    <h6>Taropood</h6>
+                </div>
+
+                <div class="features-item">
+                    <div class="features-icon">
+                        <img src="assets/img/icon/express-delivery.svg" alt="">
+                    </div>
+                    <h3>ارسال رایگان</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است . . .</p>
+                    <h6>Taropood</h6>
+                </div>
+
+                <div class="features-item">
+                    <div class="features-icon">
+                        <img src="assets/img/icon/cash-on-delivery.svg" alt="">
+                    </div>
+                    <h3>ضمانت اصالت</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است . . .</p>
+                    <h6>Taropood</h6>
+                </div>
+
+                <div class="features-item">
+                    <div class="features-icon">
+                        <img src="assets/img/icon/days-return.svg" alt="">
+                    </div>
+                    <h3>امکان تعویض</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است . . .</p>
+                    <h6>Taropood</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Questions-->
+    <section class="question" id="question">
+        <div class="container">
+            <div class="question-content">
+                <div class="question-text">
+                    <h2 class="section-title">سوالات متداول شما</h2>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز است و کاربرد های متنوع با هدف بهبود ابزار های کاربردی میباشد
+                    </p>
+                    <a href="about-us.html" class="btn btn-secondary">بیشتر بخوانید.</a>
+                </div>
+
+                <div class="question-list">
+                    <div class="question-item">
+                        <button class="question-btn" onclick="toggleQuestion(this)">
+                            چگونه کیفیت فرش را تشخیص دهم؟
+                            <span>+</span>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-btn" onclick="toggleQuestion(this)">
+                            آیا امکان خرید قسطی وجود دارد؟
+                            <span>+</span>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-btn" onclick="toggleQuestion(this)">
+                            هزینه ارسال فرش چقدر است؟
+                            <span>+</span>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-item">
+                        <button class="question-btn" onclick="toggleQuestion(this)">
+                            سفارشات چند روزه ارسال میشوند؟
+                            <span>+</span>
+                        </button>
+                        <div class="answer">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Decorations-->
+    <section class="decoration">
+        <div class="container-pro container">
+            <h2 class="section-title">دکوراسیون مشتریان تاروپود</h2>
+            <div class="product-grid" id="decoration">
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/0e227257bc7e57fe25157577902e38dd.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/1585dce21f661a1569c0752ec60ce119.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/6400277a8ccaf68841acf9fe348e3f92.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/19576aa5e059af9cf057c59a7119da91.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/3699b855237e17441cc7e2c97531c375.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/b8502bbb8057dae0a32def378c06b700.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/88905466b98eff0bf62290ccf9236e89.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/b7a75d895d2fbe073e41eac3d42a45ff.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/0e227257bc7e57fe25157577902e38dd.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/1585dce21f661a1569c0752ec60ce119.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/6400277a8ccaf68841acf9fe348e3f92.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/19576aa5e059af9cf057c59a7119da91.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/3699b855237e17441cc7e2c97531c375.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/b8502bbb8057dae0a32def378c06b700.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/88905466b98eff0bf62290ccf9236e89.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="assets/img/carpet-bnr/b7a75d895d2fbe073e41eac3d42a45ff.jpg" class="pro-image">
+                    <i class="fa fa-heart-o pro-like"></i>
+                    <h3> فرش ماشینی 6 متری کد 5200 زمینه لاکی وینتیج</h3>
+                    <div class="pro-content">
+                        <span class="price-original">21,500,000 ت</span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-pro" onclick="scrollDecor('left')">&#10094</button>
+            <button class="next-pro" onclick="scrollDecor('right')">&#10095</button>
+        </div>
+    </section>
+
+    <!--Comments-->
+    <section class="comments" id="comments">
+        <div class="container">
+            <div class="comment-grid">
+                <div class="comment-section">
+                    <div><p class="section-title">نظر خود را برای ما بفرستید!</p></div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است.
+                    </p>
+                    <a href="#comment" class="btn btn-secondary">دیدن نظرات</a>
+                </div>
+
+                <div class="comment-section send-comment">
+                    <div class="comment-title">نظرتان را بفرستید.</div>
+                    <div class="inputs">
+                        <input type="text" placeholder="نام . . .">
+                        <input type="text" placeholder="شماره همراه . . .">
+                    </div>
+                    <textarea placeholder="نظر خود را وارد نمایید . . ."></textarea>
+                    <button class="btn btn-secondary">ارسال</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Your Comments-->
+    <section class="your-comment">
+        <div class="container-comment container">
+            <h2 class="section-title">نظرات مشتریان تاروپود</h2>
+            <div class="comment-items" id="comment">
+                <div class="comment-item">
+                    <div class="top-comment-item">
+                        <div class="user-info">
+                            <img src="assets/img/user/300_21.jpg" alt="">
+                            <div class="user">
+                                <div class="user-name">مجید آقایی</div>
+                                <div class="user-level">کاربر</div>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="number-score">4.5</div>
+                            <div class="icon-score">♥</div>
+                        </div>
+                    </div>
+                    <div class="bottom-comment-item">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است. . .
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="top-comment-item">
+                        <div class="user-info">
+                            <img src="assets/img/user/blank.png" alt="">
+                            <div class="user">
+                                <div class="user-name">علیرضا آزاد</div>
+                                <div class="user-level">کاربر</div>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="number-score">5</div>
+                            <div class="icon-score">♥</div>
+                        </div>
+                    </div>
+                    <div class="bottom-comment-item">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگر ها و متون بلکه روزنامه و چیز های دیگر . . .
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="top-comment-item">
+                        <div class="user-info">
+                            <img src="assets/img/user/300_20.jpg" alt="">
+                            <div class="user">
+                                <div class="user-name">زهره حسین پور</div>
+                                <div class="user-level">کاربر</div>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="number-score">3.8</div>
+                            <div class="icon-score">♥</div>
+                        </div>
+                    </div>
+                    <div class="bottom-comment-item">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگر ها و متون بلکه روزنامه . . .
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="top-comment-item">
+                        <div class="user-info">
+                            <img src="assets/img/user/300_21.jpg" alt="">
+                            <div class="user">
+                                <div class="user-name">مجید آقایی</div>
+                                <div class="user-level">کاربر</div>
+                            </div>
+                        </div>
+                        <div class="score">
+                            <div class="number-score">4.5</div>
+                            <div class="icon-score">♥</div>
+                        </div>
+                    </div>
+                    <div class="bottom-comment-item">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگر ها و متون بلکه روزنامه و مجله و ستون و سطر آنچنان که لازم است. . .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-comment" onclick="scrollComment('left')">&#10094</button>
+            <button class="next-comment" onclick="scrollComment('right')">&#10095</button>
+        </div>
+    </section>
+
+    <!--Blog Section-->
+    <section class="blogs" id="blog">
+        <div class="container-blog container">
+            <h2 class="section-title">آخرین مقالات تاروپود</h2>
+            <div class="blog-grid" id="blogs">
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <div class="blog-caption">
+                            <h3>ویژگی های فرش دستبافت چیه؟</h3>
+                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-view">
+                        <div class="blog-info">
+                            <span class="blog-data">1404/06/28</span>
+                            <span class="blog-author">نرگس خداشاهی</span>
+                        </div>
+                        <div class="blog-link btn-primary">
+                            <a href="">ادامه مطلب</a>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <div class="blog-caption">
+                            <h3>ویژگی های فرش دستبافت چیه؟</h3>
+                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-view">
+                        <div class="blog-info">
+                            <span class="blog-data">1404/06/28</span>
+                            <span class="blog-author">نرگس خداشاهی</span>
+                        </div>
+                        <div class="blog-link btn-primary">
+                            <a href="">ادامه مطلب</a>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <div class="blog-caption">
+                            <h3>ویژگی های فرش دستبافت چیه؟</h3>
+                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-view">
+                        <div class="blog-info">
+                            <span class="blog-data">1404/06/28</span>
+                            <span class="blog-author">نرگس خداشاهی</span>
+                        </div>
+                        <div class="blog-link btn-primary">
+                            <a href="">ادامه مطلب</a>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <div class="blog-caption">
+                            <h3>ویژگی های فرش دستبافت چیه؟</h3>
+                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-view">
+                        <div class="blog-info">
+                            <span class="blog-data">1404/06/28</span>
+                            <span class="blog-author">نرگس خداشاهی</span>
+                        </div>
+                        <div class="blog-link btn-primary">
+                            <a href="">ادامه مطلب</a>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <div class="blog-caption">
+                            <h3>ویژگی های فرش دستبافت چیه؟</h3>
+                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-view">
+                        <div class="blog-info">
+                            <span class="blog-data">1404/06/28</span>
+                            <span class="blog-author">نرگس خداشاهی</span>
+                        </div>
+                        <div class="blog-link btn-primary">
+                            <a href="">ادامه مطلب</a>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <div class="blog-caption">
+                            <h3>ویژگی های فرش دستبافت چیه؟</h3>
+                            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-view">
+                        <div class="blog-info">
+                            <span class="blog-data">1404/06/28</span>
+                            <span class="blog-author">نرگس خداشاهی</span>
+                        </div>
+                        <div class="blog-link btn-primary">
+                            <a href="">ادامه مطلب</a>
+                            <i class="fa fa-arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="prev-blog" onclick="scrollBlog('left')">&#10094</button>
+            <button class="next-blog" onclick="scrollBlog('right')">&#10095</button>
+        </div>
+    </section>
+
+</main>
+
+<!--Footer-->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <span href="#" class="footer-logo">تاروپود</span>
+                <p class="footer-text">
+                    تاروپود از سال 1387 فعالیت خود را آغاز کرده است.
+                    و فروشگاه اینترنتی تاروپود در حال حاضر با متنوع ترین فرش ها
+                    برای تمام اقشار جامعه و هر رده سنی، برای کابران خود
+                    "تجربه لذت بخش خرید فرش" را تداعی میکند .
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fa fa-facebook-f"></i></a>
+
+                    <a href="#" class="footer-social-link"><i class="fa fa-instagram"></i></a>
+
+                    <a href="#" class="footer-social-link"><i class="fa fa-twitter"></i></a>
+
+                    <a href="#" class="footer-social-link"><i class="fa fa-telegram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 18px">دسترسی سریع</h3>
+                <ul class="footer-links">
+                    <li class="footer-link">
+                        <a href="#about"><i class="fa fa-chevron-left"></i> درباره تاروپود</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#category"><i class="fa fa-chevron-left"></i> دسته بندی</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#question"><i class="fa fa-chevron-left"></i> سوالات متداول</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="#blog"><i class="fa fa-chevron-left"></i> وبلاگ</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 18px">ساعات کاری</h3>
+                <ul class="footer-links">
+                    <li class="footer-link"><a href="#">پنجشنبه و جمعه : 12ظهر - 10شب</a></li>
+                    <li class="footer-link"><a href="#">شنبه: 12ظهر - 10شب</a></li>
+                    <li class="footer-link"><a href="#">یکشنبه : 10صیح - 9شب</a></li>
+                    <li class="footer-link"><a href="#">پشتیبانی : 24/7</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="section-title" style="font-size: 18px">ارتباط با تاروپود</h3>
+                <div class="footer-info">
+                    <i class="fa fa-map-marker"></i>
+                    <div>
+                        تهران، میدان هفت تیر،جنب بانک ملت
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <i class="fa fa-phone"></i>
+                    <div>دفتر تهران : 021.66657179</div>
+                </div>
+                <div class="footer-info">
+                    <i class="fa fa-envelope"></i>
+                    <div>ایمیل: taropood@gmail.com</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                تمام قوانین این وبسایت متعلق به تاروپود میباشد. |
+                وبسایت <a href="#">Taropood</a>
+                &copy;2025
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/header.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
